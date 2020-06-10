@@ -1,0 +1,119 @@
+//  Tablet & Smaller
+@media (max-width: 800px) {
+	#main-nav {
+		.main-nav__container {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		ul {
+			margin-top: 1rem;
+		}
+
+		li {
+			padding: 1rem;
+		}
+	}
+
+	#header-home {
+		height: 30rem;
+
+		.header-content {
+			padding-top: 8rem;
+
+			.content-container {
+				h1 {
+					font-size: 1.6rem;
+					line-height: 1.2;
+				}
+			}
+		}
+	}
+
+	main #article #flex-post #article__content,
+	main #article #flex-post #article__aside {
+		width: 100%;
+		padding: 0;
+	}
+
+	main #about-me .about-skills__container .specials {
+		margin-top: 3rem;
+		display: grid;
+		grid-gap: 0.5rem;
+		grid-template-columns: 1fr;
+	}
+}
+
+// Smartphones
+@media (max-width: 500px) {
+	#main-nav {
+		.main-nav__container {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		ul {
+			margin-top: 1rem;
+		}
+
+		li {
+			padding: 1rem;
+		}
+	}
+
+	#header-home {
+		height: 10rem;
+		border-bottom: 3px solid $violet-color;
+		padding-bottom: 10rem;
+
+		.header-content {
+			display: none;
+		}
+	}
+
+	#about-me {
+		.about-info,
+		.about-skills__container {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	main #about-me .about-me__container .about-info {
+		display: grid;
+
+		grid-template-areas:
+			'bioimage'
+			'bio'
+			'email'
+			'phone'
+			'address';
+		justify-content: center;
+		grid-gap: 0.8rem;
+		justify-items: center;
+		max-width: 1280px;
+	}
+
+	main #about-me .about-me__container .bio {
+		margin-left: 0px;
+	}
+
+	main #about-me .about-skills__container .specials {
+		margin-top: 3rem;
+		display: grid;
+		grid-gap: 0.5rem;
+		grid-template-columns: 1fr;
+	}
+
+	main #contact-me .contact-me__container .text-fields {
+		display: grid;
+		grid-template-areas:
+			'name'
+			'subject'
+			'email'
+			'phone'
+			'message';
+		grid-gap: 1rem;
+		margin-bottom: 1.2rem;
+		padding-left: 10px;
+	}
+}

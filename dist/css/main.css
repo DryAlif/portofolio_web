@@ -1,0 +1,633 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#header-home #main-nav .main-nav__container, main, main #article, main #contact-me {
+  max-width: 1280px;
+  margin: auto;
+}
+
+main #article .form-subscribe, main #article #flex-post #article__content .article-card, main #article #flex-post #article__aside .profile-card, main #article #flex-post #article__aside .subscribe-card {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border: 2px solid #e6e6fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  transition: box-shadow 0.3s;
+}
+
+main #article .form-subscribe:hover, main #article #flex-post #article__content .article-card:hover, main #article #flex-post #article__aside .profile-card:hover, main #article #flex-post #article__aside .subscribe-card:hover {
+  box-shadow: 0px 0px 10px 4px #d936d9;
+}
+
+main #about-me, main #about-me .about-progress-bar__container, main #contact-me .contact-me__container {
+  background-color: #f5f5f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  border: 2px solid #e6e6fa;
+  border-radius: 10px;
+  padding: 20px;
+  transition: box-shadow 0.3s;
+}
+
+main #about-me:hover, main #about-me .about-progress-bar__container:hover, main #contact-me .contact-me__container:hover {
+  box-shadow: 0px 0px 10px 4px #d936d9;
+}
+
+.btn-intro, .btn-light, .btn-dark {
+  display: inline-block;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-intro {
+  background: #f384c7;
+  color: #333;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn-light {
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+.btn-dark {
+  color: #f4f4f4;
+  background-color: #333;
+}
+
+button[class^='btn-']:hover,
+a[class^='btn-']:hover,
+input[class^='btn-']:hover {
+  background-color: #ff6bc4;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+.bg-main {
+  background: #ffbc00;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-medium {
+  background: #ccc;
+  color: #333;
+}
+
+.lead {
+  font-size: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 6rem;
+  background: #f384c7;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.m-1 {
+  margin-bottom: 20px 0;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+br {
+  background: transparent;
+}
+
+.category-sports {
+  background: #f99500;
+}
+
+.category-ent {
+  background: #a66bbe;
+}
+
+.category-tech {
+  background: #009cff;
+}
+
+.margin2 {
+  margin: 2rem 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background-color: #e6e6fa;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+#header-home {
+  background: url("../img/coding-bg.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+#header-home #main-nav {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+  background: #333;
+  padding: 1rem;
+  width: 100%;
+  transition: 0.5s;
+}
+
+#header-home #main-nav .main-nav__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-home #main-nav .main-nav__container #logo {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+#header-home #main-nav .main-nav__container #logo .text-primary {
+  color: #f384c7;
+}
+
+#header-home #main-nav .main-nav__container ul {
+  display: flex;
+  align-items: center;
+}
+
+#header-home #main-nav .main-nav__container ul li {
+  padding: 0rem 1.5rem;
+}
+
+#header-home #main-nav .main-nav__container ul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 3px transparent solid;
+  padding-bottom: 0.3rem;
+  transition: border-color 0.5s;
+}
+
+#header-home #main-nav .main-nav__container ul li a:hover {
+  color: #ff6bc4;
+  border-color: #ff6bc4;
+}
+
+#header-home #main-nav .main-nav__container ul li a.current {
+  color: #ff6bc4;
+  border-color: #f384c7;
+}
+
+#header-home .header-content {
+  max-width: 1280px;
+  margin: auto;
+}
+
+#header-home .header-content .content-container {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 20%;
+}
+
+#header-home .header-content .content-container h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+#header-home .header-content .content-container .lead {
+  padding-top: 10px;
+  font-size: 1.7rem;
+}
+
+#header-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+  font-family: "Lato", sans-serif;
+}
+
+main #about-me .about-me__container .about-info {
+  display: grid;
+  grid-template-areas: 'bioimage bio bio' 'email phone address';
+  justify-content: center;
+  grid-gap: 0.8rem;
+  justify-items: center;
+  max-width: 1280px;
+}
+
+main #about-me .about-me__container .bio-img {
+  grid-area: bioimage;
+  height: 16rem;
+  border-radius: 10px;
+  justify-self: center;
+}
+
+main #about-me .about-me__container .bio {
+  margin-left: 20px;
+  grid-area: bio;
+  border: 2px solid #f384c7;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+main #about-me .about-me__container .fa-email {
+  grid-area: email;
+  padding-top: 2rem;
+}
+
+main #about-me .about-me__container .fa-email:hover .fa-envelope {
+  color: #f384c7;
+}
+
+main #about-me .about-me__container .fa-telephone {
+  grid-area: phone;
+  padding-top: 2rem;
+}
+
+main #about-me .about-me__container .fa-telephone:hover .fa-phone-square {
+  color: #f384c7;
+}
+
+main #about-me .about-me__container .fa-address {
+  grid-area: address;
+  padding-top: 2rem;
+}
+
+main #about-me .about-me__container .fa-address:hover .fa-address-card {
+  color: #f384c7;
+}
+
+main #about-me .about-skills__container .specials {
+  margin-top: 3rem;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+main #about-me .about-skills__container .fas {
+  color: #ff6bc4;
+  padding-bottom: 0.4rem;
+}
+
+main #about-me .about-progress-bar__container .progress {
+  border: 3px solid black;
+  height: 20px;
+  background: #ccc;
+  color: black;
+  border-radius: 5px;
+  margin-bottom: 0.3rem;
+}
+
+main #about-me .about-progress-bar__container .progress div {
+  height: 100%;
+  color: #fff;
+  text-align: center;
+  background: #f384c7;
+}
+
+main #article .form-subscribe .text-email {
+  font-size: 1.6rem;
+  align-self: center;
+}
+
+main #article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+main #article .meta .category {
+  margin-top: 0.4rem;
+}
+
+main #article .category {
+  display: inline-block;
+  color: #000;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.6rem;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+main #article #flex-post #article__content {
+  float: left;
+  width: 70%;
+}
+
+main #article #flex-post #article__content .article-card {
+  text-align: justify;
+}
+
+main #article #flex-post #article__content .featured-image {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+main #article #flex-post #article__aside {
+  float: right;
+  width: 28%;
+  padding-left: 0.4rem;
+}
+
+main #article #flex-post #article__aside .profile-card header {
+  text-align: center;
+}
+
+main #article #flex-post #article__aside .profile-card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+main #article #flex-post #article__aside .profile-card table {
+  text-align: left;
+  table-layout: fixed;
+  width: 300px;
+}
+
+main #article #flex-post #article__aside .subscribe-card header {
+  text-align: center;
+}
+
+main #article #flex-post #article__aside .subscribe-card img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+main #article #flex-post #article__aside .subscribe-card .form-control {
+  position: relative;
+}
+
+main #article #flex-post #article__aside .subscribe-card .form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+main #article #flex-post #article__aside .subscribe-card .form-control.success input {
+  padding: 5px;
+  border-width: 5px;
+  border-color: #2bc96e;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: solid;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(233, 227, 227, 0.75);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+  outline: none;
+}
+
+main #article #flex-post #article__aside .subscribe-card .form-control.error input {
+  padding: 5px;
+  border-width: 5px;
+  border-color: #c74c3c;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: solid;
+  border-radius: 6px;
+  box-shadow: 0px 0px 5px rgba(233, 227, 227, 0.75);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, 0.75);
+  outline: none;
+}
+
+main #article #flex-post #article__aside .subscribe-card .form-control small {
+  color: #c74c3c;
+  position: absolute;
+  top: 2.3rem;
+  left: 0.2rem;
+  visibility: hidden;
+  outline: none;
+}
+
+main #article #flex-post #article__aside .subscribe-card .form-control.error small {
+  visibility: visible;
+}
+
+main #article #flex-post #article__aside .subscribe-card #id-email {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+main #article #flex-post #article__aside .subscribe-card small {
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+
+main #article #flex-post #article__aside .subscribe-card button[type='submit'] {
+  height: 2rem;
+  width: 50%;
+}
+
+main .exit-float {
+  display: flex;
+  width: 100%;
+}
+
+main #contact-me .contact-me__container .text-fields {
+  display: grid;
+  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+main #contact-me .contact-me__container .text-fields .name-input {
+  grid-area: name;
+}
+
+main #contact-me .contact-me__container .text-fields .subject-input {
+  grid-area: subject;
+}
+
+main #contact-me .contact-me__container .text-fields .email-input {
+  grid-area: email;
+}
+
+main #contact-me .contact-me__container .text-fields .phone-input {
+  grid-area: phone;
+}
+
+main #contact-me .contact-me__container .text-fields .message-input {
+  grid-area: message;
+  height: 100px;
+}
+
+main #contact-me .contact-me__container .text-fields .text-input {
+  padding: 0.5rem 1rem;
+}
+
+main #contact-me .contact-me__container button[type='submit'] {
+  height: 2rem;
+  width: 50%;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  #main-nav .main-nav__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main-nav ul {
+    margin-top: 1rem;
+  }
+  #main-nav li {
+    padding: 1rem;
+  }
+  #header-home {
+    height: 30rem;
+  }
+  #header-home .header-content {
+    padding-top: 8rem;
+  }
+  #header-home .header-content .content-container h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+  main #article #flex-post #article__content,
+  main #article #flex-post #article__aside {
+    width: 100%;
+    padding: 0;
+  }
+  main #about-me .about-skills__container .specials {
+    margin-top: 3rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  #main-nav .main-nav__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #main-nav ul {
+    margin-top: 1rem;
+  }
+  #main-nav li {
+    padding: 1rem;
+  }
+  #header-home {
+    height: 10rem;
+    border-bottom: 3px solid #f384c7;
+    padding-bottom: 10rem;
+  }
+  #header-home .header-content {
+    display: none;
+  }
+  #about-me .about-info,
+  #about-me .about-skills__container {
+    grid-template-columns: 1fr;
+  }
+  main #about-me .about-me__container .about-info {
+    display: grid;
+    grid-template-areas: 'bioimage' 'bio' 'email' 'phone' 'address';
+    justify-content: center;
+    grid-gap: 0.8rem;
+    justify-items: center;
+    max-width: 1280px;
+  }
+  main #about-me .about-me__container .bio {
+    margin-left: 0px;
+  }
+  main #about-me .about-skills__container .specials {
+    margin-top: 3rem;
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr;
+  }
+  main #contact-me .contact-me__container .text-fields {
+    display: grid;
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message';
+    grid-gap: 1rem;
+    margin-bottom: 1.2rem;
+    padding-left: 10px;
+  }
+}

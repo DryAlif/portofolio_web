@@ -1,0 +1,34 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ffbc00;
+$white-color: #fff;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$darkish-color: #212121;
+$black-color: #000;
+$violet-color: #f384c7;
+$lavender-color: #e6e6fa;
+$light-violet-color: #ff6bc4;
+$bg-image: url('../img/coding-bg.jpg');
+
+// category color
+$sports-color: #f99500;
+$ent-color: #a66bbe;
+$tech-color: #009cff;
+
+//  font family
+$lato: 'Lato', sans-serif;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@function set-text-color($color) {
+	@if (lightness($color) > 50) {
+		@return #000;
+	} @else {
+		@return #fff;
+	}
+}
